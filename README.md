@@ -17,6 +17,7 @@ Before getting started, ensure that you have the following prerequisites install
 
 ```bash
 git clone https://github.com/your-username/crud-api-laravel.git
+```
 
 2. Navigate to the project directory:
 ### `cd crud-api-laravel`
