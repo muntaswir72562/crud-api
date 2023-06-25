@@ -20,4 +20,39 @@ git clone https://github.com/your-username/crud-api-laravel.git
 ```
 
 2. Navigate to the project directory:
-### `cd crud-api-laravel`
+
+```bash
+cd crud-api-laravel
+```
+3. Install the dependencies using Composer:
+
+```bash
+composer install
+```
+4. Create a copy of the `.env.example` file and rename it to `.env`. Update the database connection details within this file according to your environment setup.
+
+5. Run the database migrations to create the required tables:
+
+```bash
+php artisan migrate
+```
+6.  seed the database with sample data, run the following command:
+
+```bash
+php artisan db:seed
+```
+7. Start the development server:
+
+```bash
+php artisan serve
+```
+
+## API Endpoints
+
+The following endpoints are available:
+
+- `GET /api/v1/product` - Get all product
+- `GET /api/v1/product/{id}` - Get a specific product by ID
+- `POST /api/v1/product` - Create a new product
+- `PUT /api/v1/product/{id}` - Update a product by ID
+- `DELETE /api/v1/product/{id}` - Delete a product by ID
